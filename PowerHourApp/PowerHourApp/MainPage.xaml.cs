@@ -13,5 +13,10 @@ namespace PowerHourApp
 		{
 			InitializeComponent();
 		}
-	}
+
+        void OnButtonClicked(object sender, EventArgs e)
+        {
+            DisplayAlert("Hello, World!", "Welcome to Xamarin", "OK");
+        }
+    }
 }
