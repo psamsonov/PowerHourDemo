@@ -16,7 +16,7 @@ namespace PowerHourApp
 
         void OnButtonClicked(object sender, EventArgs e)
         {
-            DisplayAlert("Hello, World!", "Welcome to Xamarin", "OK");
+            DisplayAlert("Hello, World!", String.Format("Welcome to Xamarin on {0} {1} ", Device.RuntimePlatform, Device.Idiom), "OK");
         }
     }
 }
