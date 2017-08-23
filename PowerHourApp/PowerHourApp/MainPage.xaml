@@ -4,10 +4,10 @@
              xmlns:local="clr-namespace:PowerHourApp"
              x:Class="PowerHourApp.MainPage">
 
-	<Button 
-            Clicked="OnButtonClicked"
-            Text="Welcome to Xamarin Forms!" 
+    <Button Clicked="OnButtonClicked"
             VerticalOptions="Center" 
-            HorizontalOptions="Center"/>
+            HorizontalOptions="Center"
+            Image="button.png"/>
+
 
 </ContentPage>

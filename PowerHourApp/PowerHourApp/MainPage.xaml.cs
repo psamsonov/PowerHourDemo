@@ -12,6 +12,7 @@ namespace PowerHourApp
 		public MainPage()
 		{
 			InitializeComponent();
+
 		}
 
         void OnButtonClicked(object sender, EventArgs e)
