@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
+using Xamarin.Forms.Maps;
 
 namespace PowerHourApp
 {
@@ -12,12 +13,20 @@ namespace PowerHourApp
 		public MainPage()
 		{
 			InitializeComponent();
-
+            Pin pin = new Pin
+            {
+                Type = PinType.Place,
+                Position = new Position(43.643634, -79.4036502),
+                Label = "KG",
+                Address = "445 King St. West"
+            };
+            pin.Clicked += Pin_Clicked;
+            PowerHourMap.Pins.Add(pin);
 		}
 
-        void OnButtonClicked(object sender, EventArgs e)
+        private void Pin_Clicked(object sender, EventArgs e)
         {
-            DisplayAlert("Hello, World!", String.Format("Welcome to Xamarin on {0} {1} ", Device.RuntimePlatform, Device.Idiom), "OK");
+            Device.OpenUri(new Uri("https://www.konradgroup.com/"));
         }
     }
 }
