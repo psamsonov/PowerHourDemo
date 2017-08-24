@@ -1,5 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 	<uses-sdk android:minSdkVersion="15" />
-	<application android:label="PowerHourApp.Android"></application>
+	<application android:label="PowerHourApp.Android">
+    <permission android:name="android.permisssion.ACCESS_FINE_LOCATION"></permission>
+    <permission android:name="android.permisssion.ACCESS_COARSE_LOCATION"></permission>
+    <permission android:name="android.permisssion.INTERNET"></permission>
+    <meta-data
+        android:name="com.google.android.maps.v2.API_KEY"
+        android:value="AIzaSyC8cOilMVv06NpLxt8mjycFcWqjRfb2PEc"/>
+  </application>
 </manifest>

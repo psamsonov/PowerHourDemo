@@ -2,41 +2,13 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:PowerHourApp"
-             x:Class="PowerHourApp.MainPage">
+             x:Class="PowerHourApp.MainPage"
+             xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps">
 
-    <Button Clicked="OnButtonClicked"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center"
-            Image="button.png"
-            >
-        <Button.WidthRequest>
-            <OnIdiom x:TypeArguments="x:Double">
-                <OnIdiom.Desktop>
-                    800
-                </OnIdiom.Desktop>
-                <OnIdiom.Tablet>
-                    700
-                </OnIdiom.Tablet>
-                <OnIdiom.Phone>
-                    500
-                </OnIdiom.Phone>
-            </OnIdiom>
-        </Button.WidthRequest>
-
-        <Button.HeightRequest>
-            <OnIdiom x:TypeArguments="x:Double">
-                <OnIdiom.Desktop>
-                    800
-                </OnIdiom.Desktop>
-                <OnIdiom.Tablet>
-                    700
-                </OnIdiom.Tablet>
-                <OnIdiom.Phone>
-                    500
-                </OnIdiom.Phone>
-            </OnIdiom>
-        </Button.HeightRequest>
-    </Button>
-
-
+    <maps:Map WidthRequest="320" HeightRequest="200"
+            x:Name="PowerHourMap"
+            IsShowingUser="true" 
+            MapType="Hybrid"
+            
+        />
 </ContentPage>

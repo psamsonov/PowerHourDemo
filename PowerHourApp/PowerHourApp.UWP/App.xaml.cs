@@ -59,6 +59,7 @@ namespace PowerHourApp.UWP
                 rootFrame.NavigationFailed += OnNavigationFailed;
 
                 Xamarin.Forms.Forms.Init(e);
+                Xamarin.FormsMaps.Init("Yeqh7w2v3OT7rijzLWP4~rMDTl9cPeKn2WbBxyW5VfQ~AgDVip0veTiAYPCSWo6sJ3g_NWCzGZPR8xtQpr0DmQOOhgUqk6Go6MxIGJ1uq7F1");
 
                 if (e.PreviousExecutionState == ApplicationExecutionState.Terminated)
                 {
