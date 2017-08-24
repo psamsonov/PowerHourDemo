@@ -7,7 +7,36 @@
     <Button Clicked="OnButtonClicked"
             VerticalOptions="Center" 
             HorizontalOptions="Center"
-            Image="button.png"/>
+            Image="button.png"
+            >
+        <Button.WidthRequest>
+            <OnIdiom x:TypeArguments="x:Double">
+                <OnIdiom.Desktop>
+                    800
+                </OnIdiom.Desktop>
+                <OnIdiom.Tablet>
+                    700
+                </OnIdiom.Tablet>
+                <OnIdiom.Phone>
+                    500
+                </OnIdiom.Phone>
+            </OnIdiom>
+        </Button.WidthRequest>
+
+        <Button.HeightRequest>
+            <OnIdiom x:TypeArguments="x:Double">
+                <OnIdiom.Desktop>
+                    800
+                </OnIdiom.Desktop>
+                <OnIdiom.Tablet>
+                    700
+                </OnIdiom.Tablet>
+                <OnIdiom.Phone>
+                    500
+                </OnIdiom.Phone>
+            </OnIdiom>
+        </Button.HeightRequest>
+    </Button>
 
 
 </ContentPage>

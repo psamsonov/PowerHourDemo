@@ -26,8 +26,4 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)resources\android.png" />
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)resources\windows.jpg" />
-  </ItemGroup>
 </Project>
