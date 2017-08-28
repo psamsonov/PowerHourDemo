@@ -8,25 +8,17 @@ using Xamarin.Forms.Maps;
 
 namespace PowerHourApp
 {
-	public partial class MainPage : ContentPage
-	{
+	public partial class MainPage : CarouselPage
+    {
 		public MainPage()
 		{
 			InitializeComponent();
-            Pin pin = new Pin
-            {
-                Type = PinType.Place,
-                Position = new Position(43.643634, -79.4036502),
-                Label = "KG",
-                Address = "445 King St. West"
-            };
-            pin.Clicked += Pin_Clicked;
-            PowerHourMap.Pins.Add(pin);
-		}
 
-        private void Pin_Clicked(object sender, EventArgs e)
-        {
-            Device.OpenUri(new Uri("https://www.konradgroup.com/"));
+            Children.Add(new ContactDetailPage("Multiplatform support"));
+            Children.Add(new ContactDetailPage("Write once, run everywhere (totally works)"));
+            Children.Add(new ContactDetailPage("C# is great"));
+
         }
+
     }
 }
