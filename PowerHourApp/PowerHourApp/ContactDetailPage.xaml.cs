@@ -13,20 +13,22 @@ namespace PowerHourApp
 	public partial class ContactDetailPage : ContentPage
 	{
 
-		public ContactDetailPage (string text)
+		public ContactDetailPage (string title, string text)
 		{
 			InitializeComponent ();
-            BindingContext = new ContactDetailViewModel(text);
+            BindingContext = new ContactDetailViewModel(title, text);
 		}
 	}
 
     class ContactDetailViewModel
     {
         public string ContentPageText { get; set; }
+        public string ContentPageTitle { get; set; }
 
-        public ContactDetailViewModel(string text)
+        public ContactDetailViewModel(string title, string text)
         {
             ContentPageText = text;
+            ContentPageTitle = title;
         }
     }
 

@@ -8,7 +8,7 @@ namespace PowerHourApp
 		{
 			InitializeComponent();
 
-			MainPage = new PowerHourApp.MainPage();
+			MainPage = new NavigationPage( new MainPage());
 		}
 
 		protected override void OnStart ()
