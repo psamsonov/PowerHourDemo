@@ -11,8 +11,7 @@
 namespace PowerHourApp {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\peter\\Documents\\Visual Studio 2017\\Projects\\PowerHourApp\\PowerHourApp\\Po" +
-        "werHourApp\\MainPage.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\peter\\Documents\\PowerHourDemo\\PowerHourApp\\PowerHourApp\\MainPage.xaml")]
     public partial class MainPage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]

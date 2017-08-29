@@ -22237,12 +22237,12 @@
   },
   "project": {
     "restore": {
-      "projectUniqueName": "C:\\Users\\peter\\Documents\\Visual Studio 2017\\Projects\\PowerHourApp\\PowerHourApp\\PowerHourApp.UWP\\PowerHourApp.UWP.csproj",
+      "projectUniqueName": "C:\\Users\\peter\\Documents\\PowerHourDemo\\PowerHourApp\\PowerHourApp.UWP\\PowerHourApp.UWP.csproj",
       "projectName": "PowerHourApp.UWP",
-      "projectPath": "C:\\Users\\peter\\Documents\\Visual Studio 2017\\Projects\\PowerHourApp\\PowerHourApp\\PowerHourApp.UWP\\PowerHourApp.UWP.csproj",
-      "projectJsonPath": "C:\\Users\\peter\\Documents\\Visual Studio 2017\\Projects\\PowerHourApp\\PowerHourApp\\PowerHourApp.UWP\\project.json",
+      "projectPath": "C:\\Users\\peter\\Documents\\PowerHourDemo\\PowerHourApp\\PowerHourApp.UWP\\PowerHourApp.UWP.csproj",
+      "projectJsonPath": "C:\\Users\\peter\\Documents\\PowerHourDemo\\PowerHourApp\\PowerHourApp.UWP\\project.json",
       "packagesPath": "C:\\Users\\peter\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\peter\\Documents\\Visual Studio 2017\\Projects\\PowerHourApp\\PowerHourApp\\PowerHourApp.UWP\\obj\\",
+      "outputPath": "C:\\Users\\peter\\Documents\\PowerHourDemo\\PowerHourApp\\PowerHourApp.UWP\\obj\\",
       "projectStyle": "ProjectJson",
       "configFilePaths": [
         "C:\\Users\\peter\\AppData\\Roaming\\NuGet\\NuGet.Config",
