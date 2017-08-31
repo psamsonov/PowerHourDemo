@@ -13,10 +13,16 @@ namespace PowerHourApp
 	public partial class ContactDetailPage : ContentPage
 	{
 
-		public ContactDetailPage (string title, string text)
-		{
+        public ContactDetailPage()
+        {
+            InitializeComponent();
+            BindingContext = new ContactDetailViewModel("Front Page", "3 more reasons to use Xamarin forms");
+        }
+
+        public ContactDetailPage (string title, string contents)
+        {
 			InitializeComponent ();
-            BindingContext = new ContactDetailViewModel(title, text);
+            BindingContext = new ContactDetailViewModel(title, contents);
 		}
 	}
 

@@ -7,9 +7,7 @@
              Icon="button.png">
     <ContentPage.Content>
         <StackLayout>
-            <Label HorizontalOptions="Center" Text="Reasons to use Xamarin Forms:" />
             <Label HorizontalOptions="Center" Text="{Binding ContentPageText}" />
         </StackLayout>
-        
     </ContentPage.Content>
 </ContentPage>

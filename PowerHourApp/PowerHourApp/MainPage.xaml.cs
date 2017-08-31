@@ -4,45 +4,27 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
-using Xamarin.Forms.Maps;
 
 namespace PowerHourApp
 {
-	public partial class MainPage : ContentPage
+	public partial class MainPage : MasterDetailPage
     {
 		public MainPage()
 		{
 			InitializeComponent();
-            
+            masterPage.getListView().ItemSelected += OnItemSelected;
         }
 
-        public async void OnPushButtonClicked(object sender, EventArgs e)
+        void OnItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
-            MainPage nextPage = new MainPage();
-            nextPage.BindingContext = new StackSizeViewModel(BindingContext==null?1:(BindingContext as StackSizeViewModel).StackSize + 1);
-            await Navigation.PushAsync(nextPage);
-        }
-
-        public async void OnPopButtonClicked(object sender, EventArgs e)
-        {
-            try
+            var item = e.SelectedItem as MasterPageItem;
+            if (item != null)
             {
-                await Navigation.PopAsync();
-            }
-            catch (Exception)
-            {
-                await DisplayAlert("Cannot pop", "Cannot pop stack, are there any pages left?", "OK");
+                Detail = new ContactDetailPage(item.Title, item.Contents);
+                masterPage.getListView().SelectedItem = null;
+                IsPresented = false;
             }
         }
     }
-
-    class StackSizeViewModel
-    {
-        public int StackSize { get; set; }
-        public StackSizeViewModel(int size)
-        {
-            StackSize = size;
-        }
-
-    }
+    
 }
